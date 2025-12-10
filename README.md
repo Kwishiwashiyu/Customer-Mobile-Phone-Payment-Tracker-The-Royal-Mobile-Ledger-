@@ -1,4 +1,4 @@
-# 👑 The Royal Mobile Ledger: Customer Mobile Phone Payment Tracker
+# 👑 The Royal Phone Ledger: Customer Mobile Phone Payment Tracker
 
 A Python-based application using Tkinter for the GUI and MySQL (via XAMPP) for database management, designed to track mobile phone installment plans, payments, and overdue accounts within a feudal, medieval theme.
 
