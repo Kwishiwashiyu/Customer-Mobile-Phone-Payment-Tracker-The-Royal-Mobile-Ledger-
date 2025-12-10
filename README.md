@@ -90,6 +90,7 @@ MobilePaymentTracker/
 ├── phones.py                # Phone Inventory CRUD Logic
 ├── installments.py          # Installment Plan Creation and Management Logic
 ├── payments.py              # Payment Recording, History, and Overdue Check Logic
+├── Data_dummy.py            # Sample Data for testing (Contains 3 customers, 2 phones, and 2 installments with payment records)
 │
 └── gui/
     ├── dashboard_gui.py     # Kingdom Overview and Overdue Report
