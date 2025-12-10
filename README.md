@@ -79,7 +79,7 @@ python main.py
 
 ## 📂 Project Structure
 
-The project follows a clean, modular structure as requested:
+The project follows a clean, modular structure:
 
 ```
 MobilePaymentTracker/
