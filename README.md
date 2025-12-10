@@ -38,22 +38,22 @@ The application requires a MySQL database named `TheRoyalPhoneLedger`.
     <!-- end list -->
 
     ```sql
-    CREATE TABLE IF NOT EXISTS customers (
+    CREATE TABLE customers (
         customer_id INT AUTO_INCREMENT PRIMARY KEY,
         first_name VARCHAR(50), last_name VARCHAR(50), contact VARCHAR(30), address TEXT
     );
-    CREATE TABLE IF NOT EXISTS phones (
+    CREATE TABLE phones (
         phone_id INT AUTO_INCREMENT PRIMARY KEY,
         model_name VARCHAR(100), brand VARCHAR(50), price DECIMAL(10,2), stock INT
     );
-    CREATE TABLE IF NOT EXISTS installment_plans (
+    CREATE TABLE installment_plans (
         installment_id INT AUTO_INCREMENT PRIMARY KEY,
         customer_id INT, phone_id INT, purchase_date DATE, months INT, interest_rate DECIMAL(5,2),
         total_amount DECIMAL(10,2), monthly_payment DECIMAL(10,2), remaining_balance DECIMAL(10,2),
         status VARCHAR(20), FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
         FOREIGN KEY (phone_id) REFERENCES phones(phone_id)
     );
-    CREATE TABLE IF NOT EXISTS payments (
+    CREATE TABLE payments (
         payment_id INT AUTO_INCREMENT PRIMARY KEY, installment_id INT, payment_date DATE,
         amount DECIMAL(10,2), remarks VARCHAR(100), FOREIGN KEY (installment_id) REFERENCES installment_plans(installment_id)
     );
