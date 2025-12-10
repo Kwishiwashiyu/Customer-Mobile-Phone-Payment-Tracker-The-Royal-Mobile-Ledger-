@@ -11,14 +11,14 @@ except ImportError:
         'host': 'localhost',
         'user': 'root',
         'password': '',
-        'database': 'MobilePaymentTracker'
+        'database': 'TheRoyalPhoneLedger'
     }
 
 def insert_dummy_data():
     """Inserts dummy data for testing purposes."""
     
     config = DB_CONFIG.copy()
-    config['database'] = 'MobilePaymentTracker'
+    config['database'] = 'TheRoyalPhoneLedger'
 
     try:
         conn = mysql.connector.connect(**config)
@@ -90,4 +90,5 @@ def insert_dummy_data():
             conn.close()
 
 if __name__ == "__main__":
+
     insert_dummy_data()
