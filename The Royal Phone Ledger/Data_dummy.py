@@ -35,11 +35,11 @@ def insert_dummy_data():
 
         # 1. Insert Customers (Subjects)
         customers_data = [
-            ("Sir", "Lancelot", "555-1001", "Camelot Keep"), # ID 1 (On time)
-            ("Lady", "Guinevere", "555-1002", "Royal Chambers"), # ID 2
-            ("Lord", "Mordred", "555-1003", "Dark Tower") # ID 3 (Overdue)
+            ("Sir", "Lancelot", "555-1001"), # ID 1 (On time)
+            ("Lady", "Guinevere", "555-1002"), # ID 2
+            ("Lord", "Mordred", "555-1003") # ID 3 (Overdue)
         ]
-        cursor.executemany("INSERT INTO customers (first_name, last_name, contact, address) VALUES (%s, %s, %s, %s)", customers_data)
+        cursor.executemany("INSERT INTO customers (first_name, last_name, contact) VALUES (%s, %s, %s)", customers_data)
 
         # 2. Insert Phones (Weapons)
         phones_data = [
