@@ -115,7 +115,7 @@ The Royal Phone Ledger/
 
 ## ⚙️ Database Configuration
 
-The system connects to `localhost` using the default XAMPP credentials (`root` with an empty password) and the database name `MobilePaymentTracker`. This is defined in `db.py`.
+The system connects to `localhost` using the default XAMPP credentials (`root` with an empty password) and the database name `TheRoyalPhoneLedger`. This is defined in `db.py`.
 
 ```python
 # db.py
