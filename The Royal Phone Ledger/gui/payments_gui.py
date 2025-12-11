@@ -18,7 +18,7 @@ class PaymentsGUI(tk.Frame):
         entry_frame = tk.LabelFrame(top_frame, text="Accept Tribute", bg=self.theme['bg'], fg=self.theme['text'])
         entry_frame.pack(side="left", padx=5, fill="y")
 
-        tk.Label(entry_frame, text="Installment ID:", bg=self.theme['bg']).grid(row=0, column=0, padx=5, pady=5)
+        tk.Label(entry_frame, text="Decree ID:", bg=self.theme['bg']).grid(row=0, column=0, padx=5, pady=5)
         self.iid = tk.Entry(entry_frame); self.iid.grid(row=0, column=1, padx=5, pady=5)
         
         tk.Button(entry_frame, text="Fetch Decree Status", command=self.fetch_loan_details, bg=self.theme['highlight'], fg="white").grid(row=0, column=2, padx=5, pady=5)
