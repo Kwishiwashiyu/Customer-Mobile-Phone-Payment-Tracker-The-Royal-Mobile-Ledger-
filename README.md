@@ -82,7 +82,7 @@ python main.py
 The project follows a clean, modular structure:
 
 ```
-MobilePaymentTracker/
+The Royal Phone Ledger/
 │
 ├── main.py                  # Entry point, GUI definition, Theme Setup
 ├── db.py                    # MySQL Connection Configuration
