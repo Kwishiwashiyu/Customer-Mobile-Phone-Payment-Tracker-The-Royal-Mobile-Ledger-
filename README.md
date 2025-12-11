@@ -63,10 +63,10 @@ The application requires a MySQL database named `TheRoyalPhoneLedger`.
 
 To test the Overdue Report feature immediately, run the provided data injector script.
 
-1.  Place the `data_injector.py` file in the same directory as `main.py`.
+1.  Place the `Data_dummy.py` file in the same directory as `main.py`.
 2.  Run the script from your terminal:
     ```bash
-    python data_injector.py
+    python Data_dummy.py
     ```
 
 ### Step 3: Run the Application
@@ -82,7 +82,7 @@ python main.py
 The project follows a clean, modular structure:
 
 ```
-MobilePaymentTracker/
+The Royal Phone Ledger/
 │
 ├── main.py                  # Entry point, GUI definition, Theme Setup
 ├── db.py                    # MySQL Connection Configuration
